@@ -1,5 +1,5 @@
 import Banner from './componentes/Banner/Banner';
-import CampoTexto from './componentes/CampoTexto/CampoTexto';
+
 import Formulario from './componentes/Formulario/Formulario';
 
 function App() {
@@ -7,7 +7,6 @@ function App() {
     <div className="App">
       <Banner />
       <Formulario />
-      
     </div>
   );
 }
