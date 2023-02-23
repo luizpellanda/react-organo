@@ -1,9 +1,12 @@
 import './Time.css';
 
 const Time = (props) => {
+
+    const background = { backgroundColor: props.corSecundaria };
+    const sublinhado = { borderColor : props.corPrimaria }
     return (
-        <section>
-            <h3>{props.nome}</h3>
+        <section className='time' style={background}>
+            <h3 style={sublinhado}>{props.nome}</h3>
         </section>
     )
 }
