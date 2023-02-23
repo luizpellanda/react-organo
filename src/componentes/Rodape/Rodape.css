@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 213px;
+    background-color: #6278F7;
+    background-image: url('../../../public/imagens/fundo.png');
+    background-repeat: no-repeat; 
+}
+
+footer .imagens {
+    display: flex;
+    gap: 35px;
+}
+
+footer .alura p {
+    color: white;
+    font-size: 20px;
+}
