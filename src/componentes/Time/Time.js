@@ -11,7 +11,25 @@ const Time = (props) => {
         (props.colaboradores.length > 0) && <section className='time' style={background}>
             <h3 style={sublinhado}>{props.nome}</h3>
             <div className='colaboradores'>
-                {props.colaboradores.map( colaborador => <Colaborador corDeFundo={props.corPrimaria} nome={colaborador.nome} cargo={colaborador.cargo} imagem={colaborador.imagem} key={colaborador.nome} />)}
+                {props.colaboradores.map( colaborador => {
+
+                    console.log(<Colaborador 
+                        corDeFundo={props.corPrimaria} 
+                        nome={colaborador.nome} 
+                        cargo={colaborador.cargo} 
+                        imagem={colaborador.imagem} 
+                        key={colaborador.nome}
+                        aoDeletar={props.aoDeletar} 
+                    />)
+                    return <Colaborador 
+                        corDeFundo={props.corPrimaria} 
+                        nome={colaborador.nome} 
+                        cargo={colaborador.cargo} 
+                        imagem={colaborador.imagem} 
+                        key={colaborador.nome}
+                        aoDeletar={props.aoDeletar} 
+                    />
+                })}
             </div>   
         </section>
     )
