@@ -1,19 +1,17 @@
-footer {
+.footer {
+    background: #6278F7;
+    color: #FFF;
+    padding: 80px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 213px;
-    background-color: #6278F7;
-    background-image: url('../../../public/imagens/fundo.png');
-    background-repeat: no-repeat; 
 }
 
-footer .imagens {
-    display: flex;
-    gap: 35px;
+.footer ul li {
+    display: inline-block;
+    margin-right: 32px;
 }
 
-footer .alura p {
-    color: white;
-    font-size: 20px;
+.footer ul li:last-child {
+    margin-right: 0;
 }
